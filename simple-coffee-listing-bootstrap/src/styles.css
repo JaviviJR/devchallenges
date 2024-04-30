@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@200;400;500&display=swap');
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; /* 1 rem = 10px */
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+/* Reset some default styles */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* Add some styles for body*/
+body {
+    font-size: 1.6rem;
+    min-height: 100vh;
+    /* max-width: 1280px; */
+
+    background: #111315;
+    /* color: #fff; */
+    color: #FEF7EE;
+
+    font-family: 'Sora', sans-serif;
+    /* overflow-x: hidden; */
+}
+
+.container {
+    max-width: 1280px;
+    min-height: 100vh;
+    margin:0 auto;
+}
+
+.background-image {
+    position: absolute;
+    top: 0;
+    z-index: -1000;
+    width: 100%;
+    height: 22rem;
+    max-width: 1280px;
+    min-width: 40rem;
+
+    background-image: url("../bg-cafe.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+
+.box {
+    background-color: #1B1D1F;
+    width: 85%;
+    border-radius: 10px;
+    min-width: 40rem;
+    margin: 16rem auto 0 auto;
+}
+
+.introduction {
+    background-image: url("vector.svg");
+    background-repeat: no-repeat;
+    background-position: top right;
+    object-fit: cover;
+    max-width: 55rem;
+    padding: 6rem 0rem 1rem 0rem;
+    /* margin: 3rem 3rem 3rem 3rem; */
+    margin: 3rem;
+    text-align: center;
+}
+
+.introduction h1 {
+    margin-bottom: 1rem;
+}
+
+.introduction p {
+    color: #6F757C;
+}
+
+.card-coffee {
+    color: #FEF7EE;
+    background-color: #1B1D1F;
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.card-coffee img {
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.card-body-coffee {
+    padding-left: 0rem;
+    padding-right: 0rem;
+}

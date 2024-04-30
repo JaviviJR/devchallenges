@@ -1,0 +1,10 @@
+services:
+    devch-node:
+        container_name: devch-node
+        command: bash
+        build: ./node
+        mem_limit: 2048m
+        volumes:
+            - ${APP_DIR}:/home/app
+        working_dir: /home/app
+        network_mode: host
