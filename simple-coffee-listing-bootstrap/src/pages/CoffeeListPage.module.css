@@ -1,0 +1,41 @@
+.box {
+    background-color: #1B1D1F;
+    width: 85%;
+    border-radius: 10px;
+    min-width: 40rem;
+    margin: 16rem auto 10rem auto;
+    padding-bottom: 10rem;
+}
+
+.introduction {
+    background-image: url("vector.svg");
+    background-repeat: no-repeat;
+    background-position: top right;
+    object-fit: cover;
+    max-width: 55rem;
+    padding: 6rem 0rem 1rem 0rem;
+    /* margin: 3rem 3rem 3rem 3rem; */
+    margin: 3rem;
+    text-align: center;
+}
+
+.introduction h1 {
+    margin-bottom: 1rem;
+}
+
+.introduction p {
+    color: #6F757C;
+}
+
+.filter button {
+    border: none;
+    color: white;
+    background-color: transparent;
+    font-weight: 600;
+    border-radius: 10px;
+    padding: 1rem;
+}
+
+.enabled {
+    background-color: #6F757C !important;
+}

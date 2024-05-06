@@ -1,0 +1,48 @@
+.cardcoffee {
+    color: #FEF7EE;
+    background-color: #1B1D1F;
+    width: fit-content;
+    /* width: 30rem; */
+    margin: 0 auto;
+    position: relative;
+}
+
+.cardcoffee img {
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.cardbodycoffee {
+    padding-left: 0rem;
+    padding-right: 0rem;
+}
+
+.cardprice {
+    background-color: #BEE3CC;
+    color: black;
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    font-size: 1.2rem;
+}
+
+.coffeevotes img {
+    width: 2rem;
+    margin-bottom: 0.5rem;
+    margin-right: 0.5rem;
+}
+
+.coffeevotes .gray {
+    color: #6F757C;
+}
+
+.coffeevotes .out {
+    color: #ED735D;
+}
+
+.popular {
+    background-color: #F6C768;
+    color: black;
+    top: 1rem;
+    left: 1.5rem;
+}
