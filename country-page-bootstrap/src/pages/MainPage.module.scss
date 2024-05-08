@@ -1,0 +1,69 @@
+.inputSearch {
+    width: 30rem;
+    border: none;
+}
+
+.inputSearch span,
+.inputSearch input {
+    background-color: #282B30;
+    border: none;
+    border-radius: 10px;
+    color: #6C727F;
+}
+
+.inputSearch input::placeholder,
+.inputSearch input:focus {
+    background-color: #282B30;
+    color: #6C727F;
+}
+
+// Filtros
+
+.filterSection {
+    // background-color: red;
+}
+
+.filterSection label {
+    color: #6C727F;
+    font-size: 1rem;
+}
+
+.filterSection select {
+    background-color: transparent;
+    padding: 1rem;
+    border-color: #272a2f;
+    color: #D2D5DA;
+    font-weight: 700;
+}
+
+.countryList table {
+    --bs-table-color: #D2D5DA;
+    --bs-table-bg: none;
+    border: none;
+}
+
+// Fin filtros
+
+// Tabla de paises
+
+.countryList table thead {
+    --bs-table-color: #6C727F;
+}
+
+// No consigo que funcione
+
+// .countryList table tbody .table-group-divider {
+//     border-top: 1px solid #6C727F !important;
+// }
+
+.countryList table th,
+.countryList table td {
+    border: none;
+    padding: 1.5rem;
+}
+
+.countryList table tbody {
+    --bs-table-color: #D2D5DA;
+}
+
+// Fin tabla de paises
