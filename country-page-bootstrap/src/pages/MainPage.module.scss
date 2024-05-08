@@ -1,3 +1,5 @@
+@import '../styles.css';
+
 .inputSearch {
     width: 30rem;
     border: none;
@@ -5,16 +7,16 @@
 
 .inputSearch span,
 .inputSearch input {
-    background-color: #282B30;
+    background-color: var(--color-background-3);
     border: none;
     border-radius: 10px;
-    color: #6C727F;
+    color: var(--color-text-1);
 }
 
 .inputSearch input::placeholder,
 .inputSearch input:focus {
-    background-color: #282B30;
-    color: #6C727F;
+    background-color: var(--color-background-3);
+    color: var(--color-text-1);
 }
 
 // Filtros
@@ -23,31 +25,61 @@
     // background-color: red;
 }
 
-.filterSection label {
-    color: #6C727F;
+.labelFilter {
+    color: var(--color-text-1);
     font-size: 1rem;
 }
+
+// Selector
 
 .filterSection select {
     background-color: transparent;
     padding: 1rem;
     border-color: #272a2f;
-    color: #D2D5DA;
+    color: var(--color-text-2);;
+    font-weight: 700;
+}
+// Fin selector
+
+// Toggles
+.toogleButton,
+.toogleButton:hover {
+    color: var(--color-text-2) !important;
+    background-color: var(--color-background-3) !important;
+    font-size: 1rem;
+    margin: 5px;
+    font-weight: 600;
+    border-radius: 10px;
+}
+// Fin toogles
+
+// Checks
+.checksFilter input[type='checkbox'] {
+    background-color: transparent;
+    border: 1px solid var(--color-text-1);
+}
+
+.checksFilter label {
+    color: var(--color-text-2);
+    font-size: 1.1rem;
     font-weight: 700;
 }
 
-.countryList table {
-    --bs-table-color: #D2D5DA;
-    --bs-table-bg: none;
-    border: none;
-}
+// Fin Checks
 
 // Fin filtros
 
 // Tabla de paises
 
+.countryList table {
+    --bs-table-color: var(--color-text-2);
+    --bs-table-bg: none;
+    border: none;
+}
+
 .countryList table thead {
-    --bs-table-color: #6C727F;
+    --bs-table-color: var(--color-text-1);
+    font-size: 1rem;
 }
 
 // No consigo que funcione
@@ -63,7 +95,7 @@
 }
 
 .countryList table tbody {
-    --bs-table-color: #D2D5DA;
+    --bs-table-color: var(--color-text-2);
 }
 
 // Fin tabla de paises

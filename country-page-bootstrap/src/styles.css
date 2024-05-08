@@ -28,5 +28,13 @@ body {
     min-width: 64rem;
     color: white;
     font-family: 'Be Vietnam Pro', sans-serif;
-    background-color: #191a1c;
+    background-color: var(--color-background-1);
+}
+
+:root {
+    --color-text-1: #6C727F;
+    --color-text-2: #D2D5DA;
+    --color-background-1: #191a1c;
+    --color-background-2: #1c1d1f;
+    --color-background-3: #282B30;
 }
