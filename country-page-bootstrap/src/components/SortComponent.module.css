@@ -1,0 +1,14 @@
+@import '../styles.css';
+
+.filterSelect {
+    background-color: transparent;
+    padding: 1rem;
+    border-color: #272a2f;
+    color: var(--color-text-2);
+    font-weight: 700;
+}
+
+.label1 {
+    color: var(--color-text-1);
+    font-size: 1rem;
+}

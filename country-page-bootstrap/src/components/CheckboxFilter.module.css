@@ -1,0 +1,15 @@
+.checksFilter input[type='checkbox'] {
+    background-color: transparent;
+    border: 1px solid var(--color-text-1);
+}
+
+.checksFilter label {
+    color: var(--color-text-2);
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+.label1 {
+    color: var(--color-text-1);
+    font-size: 1rem;
+}

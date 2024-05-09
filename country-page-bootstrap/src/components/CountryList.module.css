@@ -1,0 +1,58 @@
+.countryList table {
+    --bs-table-color: var(--color-text-2);
+    --bs-table-bg: none;
+    border: none;
+}
+
+.countryList table thead {
+    --bs-table-color: var(--color-text-1);
+    font-size: 1rem;
+}
+
+/* No consigo que funcione */
+
+/* .countryList table tbody .table-group-divider {
+    border-top: 1px solid #6C727F !important;
+} */
+
+.countryList table th,
+.countryList table td {
+    border: none;
+    padding: 1.5rem;
+}
+
+.countryList table tbody {
+    --bs-table-color: var(--color-text-2);
+}
+
+.flagImage {
+    width: 7rem;
+    height: auto;
+    object-fit: cover;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin-top: 20px; */
+}
+
+.paginationInfo {
+    margin: 0 10px;
+}
+
+.paginationButton {
+    padding: 10px 20px;
+    margin: 0 10px;
+    border: none;
+    background-color: #272a2f;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.paginationButton:disabled {
+    background-color: #999;
+    cursor: not-allowed;
+}

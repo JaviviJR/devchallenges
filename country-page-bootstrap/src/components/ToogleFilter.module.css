@@ -1,0 +1,41 @@
+@import '../styles.css';
+
+/* color: var(--color-text-2) !important;
+    background-color: var(--color-background-3) !important; */
+
+/* .toogleLabel,
+.toogleLabel:hover {
+    --bs-btn-color: var(--color-text-1);
+    font-size: 1.2rem;
+    margin: 0.5rem;
+    padding: 0.8rem;
+    border-width: 0rem;
+    border-radius: 10px;
+    font-weight: 500;
+
+} */
+
+.btnToogle {
+    --bs-btn-color: var(--color-text-1);
+    font-size: 1.2rem;
+    margin: 0.5rem;
+    padding: 0.8rem;
+    border-width: 0rem;
+    border-radius: 10px;
+    font-weight: 500;
+    
+}
+
+.btnToogle.active:hover  {
+    --bs-btn-hover-bg: var(--color-background-3);
+}
+
+.active {
+    --bs-btn-bg: var(--color-background-3);
+    --bs-btn-color: var(--color-text-2)
+}
+
+.label1 {
+    color: var(--color-text-1);
+    font-size: 1rem;
+}

@@ -1,11 +1,14 @@
 import { Route, Routes } from "react-router-dom";
 import MainPage from "../pages/MainPage";
+import { CountriesAPIProvider } from "../context/CountriesAPIProvider";
 
 function AppRouter() {
     return (
-        <Routes>
-            <Route path="/" element={<MainPage />} />
-        </Routes>
+        <CountriesAPIProvider>
+            <Routes>
+                <Route path="/" element={<MainPage />} />
+            </Routes>
+        </CountriesAPIProvider>
     );
 }
 
