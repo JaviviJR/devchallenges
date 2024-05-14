@@ -1,0 +1,88 @@
+.box {
+    width: 100%;
+}
+
+@media (min-width: 640px) {
+    .box {
+        width: 70rem;
+    }
+}
+
+.flag {
+    width: 200px;
+    height: auto;
+}
+
+.dataBlock {
+    padding-top: 100px;
+}
+
+.dataBox {
+    background-color: var(--color-background-3);
+    border-radius: 1.2rem;
+    display: flex;
+}
+
+.labelBox, .valueBox {
+    display: inline-block;
+    margin: 1rem 0;
+    padding: 0.5rem 2rem;
+    
+}
+
+.labelBox {
+    flex: 0 0 auto;
+    border-right: 0.1rem solid var(--color-background-2);
+}
+
+.valueBox {
+    flex: 1 0 auto;
+}
+
+/* .dataList .labelList{
+    color: var(--color-text-1);
+} */
+
+.dataList table,
+.dataList tbody,
+.dataList tr,
+.dataList td,
+.dataList th {
+    border: none;
+}
+
+.dataList table {
+    --bs-table-bg: none;
+}
+
+.dataList tr:first-child {
+    border-top: 1px solid var(--color-background-3);
+}
+
+.dataList tr {
+    border-bottom: 1px solid var(--color-background-3);
+}
+
+.dataList th {
+    padding: 1.5rem;
+    color: var(--color-text-1);
+}
+
+.dataList td {
+    padding: 1.5rem;
+    text-align: right;
+    color: var(--color-text-2);
+}
+
+
+.neighbourSection img {
+    display: block;
+    width: 9rem;
+    height: 7rem;
+    /* max-height: 7rem; */
+    object-fit: contain;
+}
+
+.neighbourSection span {
+    padding-top: 1rem;
+}

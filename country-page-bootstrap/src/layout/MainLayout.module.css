@@ -1,12 +1,19 @@
 @import '../styles.css';
 
+/* .tpm {
+    position: relative;
+    width: 100%;
+    height: 300px;
+  } */
+
 .backgroundImage {
     position: absolute;
     top: 0;
     z-index: -1000;
     width: 100%;
     min-width: 64rem;
-    height: 30%;
+    /* height: 30%; */
+    height: 30vh;
     /* max-width: 1280px;
     min-width: 40rem; */
 
@@ -18,12 +25,16 @@
 
 .box {
     background-color: var(--color-background-2);
-    width: 95%;
     border-radius: 10px;
-    /* min-width: 64rem; */
     margin: 0 auto;
-    margin-top: 25rem;
+    /* margin-top: 25rem; */
+    margin-top: 25vh;
     padding-bottom: 10rem;
-    /* margin: 16rem auto 10rem auto;
-     */
+    width: 100%;
+}
+
+@media (min-width: 640px) {
+    .box {
+        width: 95%;
+    }
 }

@@ -1,5 +1,5 @@
 import MainLayout from "../layout/MainLayout";
-import Search from "../assets/Search.svg"
+
 import styles from './MainPage.module.scss';
 import { useContext, useEffect, useMemo, useState } from "react";
 import { CountriesAPIContext } from "../context/CountriesAPIContext";
@@ -8,6 +8,7 @@ import { filterCountries, sortCountries } from "../helpers/countryHelpers";
 import SortComponent from "../components/SortComponent";
 import ToogleFilter from "../components/ToogleFilter";
 import CheckboxFilter from "../components/CheckboxFilter";
+import InputSearch from "../components/InputSearch";
 
 const fields = [
     'name',
@@ -17,7 +18,8 @@ const fields = [
     'subregion',
     'flags',
     'independent',
-    'unMember'
+    'unMember',
+    'ccn3'
 ];
 
 const sortByOptions = [
@@ -74,31 +76,32 @@ function MainPage() {
         setFilter(prevFilter => ({ ...prevFilter, status: value }));
     };
 
-    const procesedCountries = useMemo(() => {
-        // console.log('memo filter', filter);
-        
-        const filteredCountries = filterCountries(countries, filter);
-        // console.log('filteredCountries', filteredCountries);
+    const handlerFilterSearchBy = (value) => {
+        setFilter(prevFilter => ({ ...prevFilter, searchBy: value }));
+    };
 
+    const procesedCountries = useMemo(() => {
+        const filteredCountries = filterCountries(countries, filter);
         return sortCountries(sortBy, filteredCountries);
     }, [countries, sortBy, filter]);
 
     return (
-        <MainLayout>
+        <MainLayout stylesProp={styles.box}>
             <div className='d-flex w-100 justify-content-between align-items-center'>
                 <div className={`${styles.counter}`}>
                     Found {procesedCountries.length} countries
                 </div>
-                <div className={`input-group ${styles.inputSearch}`}>
-                    <span className='input-group-text'><img src={ Search } /></span>
-                    <input type='text' className='form-control' placeholder='Search by Name, Region, Subregion'/>
+                <div>
+                    <InputSearch handler={ handlerFilterSearchBy } />
                 </div>
             </div>
             <div className='row pt-5'>
                 
                 <div className={`col-12 col-sm-3 ${styles.filterSection}`}>
                     
-                    <SortComponent sortByOptions={ sortByOptions } handler={ handleSortByChange }/>
+                    <div>
+                        <SortComponent sortByOptions={ sortByOptions } handler={ handleSortByChange }/>
+                    </div>
                     
                     <div className={`pt-5`}>
                         <ToogleFilter label={'Region'} filters={ regionFilters } handler={handlerFilterRegion}/>

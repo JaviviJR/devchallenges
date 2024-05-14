@@ -1,0 +1,20 @@
+.inputSearch {
+    width: 30rem;
+    border: none;
+}
+
+.inputSearch span,
+.inputSearch input {
+    background-color: var(--color-background-3);
+    border: none;
+    border-radius: 10px;
+    color: var(--color-text-1);
+    outline: none;
+}
+
+.inputSearch input::placeholder,
+.inputSearch input:focus {
+    background-color: var(--color-background-3);
+    color: var(--color-text-1);
+    box-shadow: none;
+}

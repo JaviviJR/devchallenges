@@ -8,6 +8,11 @@
     font-weight: 700;
 }
 
+.filterSelect:focus {
+    box-shadow: none;
+    border-color: #272a2f;
+}
+
 .label1 {
     color: var(--color-text-1);
     font-size: 1rem;

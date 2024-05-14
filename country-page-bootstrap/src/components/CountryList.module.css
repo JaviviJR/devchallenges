@@ -15,6 +15,10 @@
     border-top: 1px solid #6C727F !important;
 } */
 
+.countryList table tbody tr {
+    cursor: pointer;
+}
+
 .countryList table th,
 .countryList table td {
     border: none;

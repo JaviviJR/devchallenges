@@ -4,7 +4,7 @@ import { useEffect, useState } from 'react';
 
 
 function ToogleFilter({ label, filters, handler }) {
-    const [selected, setSelected] = useState(filters.map(filter => filter.value));
+    const [selected, setSelected] = useState([]);
     
     const isChecked = (value) => {
         return selected.includes(value);
