@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`testing InputSearch component should match with snapshot 1`] = `
+<div>
+  <div
+    class="input-group inputSearch"
+  >
+    <span
+      class="input-group-text"
+    >
+      <img
+        src="Search icon"
+      />
+    </span>
+    <input
+      class="form-control"
+      placeholder="Search by Name, Region, Subregion"
+      type="text"
+    />
+  </div>
+</div>
+`;

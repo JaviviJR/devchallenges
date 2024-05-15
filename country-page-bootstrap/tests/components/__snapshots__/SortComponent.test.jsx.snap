@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`testing Sort component should match with snapshot 1`] = `
+<div>
+  <div>
+    <label
+      class="form-label label1"
+      for="sortby"
+    >
+      Sort by
+    </label>
+    <select
+      class="form-select filterSelect"
+      name="sortby"
+    >
+      <option
+        value="sort1Value"
+      >
+        sort1Label
+      </option>
+      <option
+        value="sort2Value"
+      >
+        sort2Label
+      </option>
+    </select>
+  </div>
+</div>
+`;

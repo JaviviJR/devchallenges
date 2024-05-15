@@ -27,15 +27,14 @@ function CheckboxFilter({ label, filters, handler }) {
         <fieldset className={`${styles.checksFilter}`}>
             <legend className={`${styles.label1}`}>{ label }</legend>
             
-            { filters.map(filter => (
-                <div key={ filter.value } className="form-check">
+            { filters.map((filter, index) => (
+                <div key={ index } className="form-check">
                     <input 
                         className="form-check-input"
                         type="checkbox"
                         value={ filter.value }
                         id={ filter.value }
                         onChange={ handleChange }
-                        checked={ isChecked(filter.value) }
                     />
                     <label 
                         className="form-check-label"

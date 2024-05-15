@@ -1,0 +1,47 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`testing CheckFilter component should match with snapshot 1`] = `
+<div>
+  <fieldset
+    class="checksFilter"
+  >
+    <legend
+      class="label1"
+    >
+      labelTest
+    </legend>
+    <div
+      class="form-check"
+    >
+      <input
+        class="form-check-input"
+        id="filter1Value"
+        type="checkbox"
+        value="filter1Value"
+      />
+      <label
+        class="form-check-label"
+        for="filter1Value"
+      >
+        filter1Label
+      </label>
+    </div>
+    <div
+      class="form-check"
+    >
+      <input
+        class="form-check-input"
+        id="filter2Value"
+        type="checkbox"
+        value="filter2Value"
+      />
+      <label
+        class="form-check-label"
+        for="filter2Value"
+      >
+        filter2Label
+      </label>
+    </div>
+  </fieldset>
+</div>
+`;

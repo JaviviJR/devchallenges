@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`testing CheckFilter component should match with snapshot 1`] = `
+<div>
+  <fieldset
+    class="d-flex flex-wrap"
+  >
+    <legend
+      class="label1"
+    >
+      labelTest
+    </legend>
+    <div>
+      <button
+        class="btn btnToogle "
+        name="filter1Value"
+        type="button"
+      >
+        filter1Label
+      </button>
+    </div>
+    <div>
+      <button
+        class="btn btnToogle "
+        name="filter2Value"
+        type="button"
+      >
+        filter2Label
+      </button>
+    </div>
+  </fieldset>
+</div>
+`;

@@ -23,11 +23,7 @@ export function CountriesAPIProvider({ children }) {
 
     async function getCountry(code) {
         let country = await getCountryByCode(code);
-        
-        // console.log('country', country);
         country = country[0];
-        // console.log(`country ${code} - capital`, country.capital, country.capital && country.capital.lenght > 0 ? country.capital[0] : 'No Capital',);
-        // console.log(country.capital, country.capital && country.capital.length);
 
         return {
             shortName: country.name.common,

@@ -27,7 +27,6 @@ function DetailPage() {
         const fetchCountry = async () => {
             setLoading(true);
             const data = await getCountryMemoized(id);
-            console.log('Country data:', data);
             setCountryData(data);
             setLoading(false);
         }
